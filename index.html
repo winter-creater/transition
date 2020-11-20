@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transition过渡</title>
+    <style>
+      #demo {
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        transition: all 5s;
+        background-color: red;
+        visibility: visible;
+      }
+      #demo.end {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <button id="x">start</button>
+    <script>
+      x.onclick = () => {
+        demo.classList.add("end");
+      };
+    </script>
+  </body>
+</html>
